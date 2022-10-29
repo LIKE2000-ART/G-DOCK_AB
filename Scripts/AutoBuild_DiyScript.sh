@@ -74,7 +74,6 @@ EOF
 		AddPackage git themes luci-theme-neobird thinktip main
 		AddPackage git other luci-app-smartdns pymumu lede
 		AddPackage git other openwrt-passwall xiaorouji main
-		AddPackage git lean openwrt-passwall xiaorouji luci
 		case "${TARGET_BOARD}" in
 		ramips)
 			sed -i "/DEVICE_COMPAT_VERSION := 1.1/d" target/linux/ramips/image/mt7621.mk
@@ -101,4 +100,6 @@ EOF
 		sed -i "s?/bin/login?/usr/libexec/login.sh?g" ${FEEDS_PKG}/ttyd/files/ttyd.config
 	;;
 	esac
+	AddPackage git passwall-depends openwrt-passwall xiaorouji packages
+	AddPackage git passwall-luci openwrt-passwall xiaorouji luci
 }
