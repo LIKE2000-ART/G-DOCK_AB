@@ -73,8 +73,8 @@ EOF
 		AddPackage git other helloworld fw876 master
 		AddPackage git themes luci-theme-neobird thinktip main
 		AddPackage git other luci-app-smartdns pymumu lede
-		AddPackage git lean openwrt-passwall xiaorouji luci
 		AddPackage git other openwrt-passwall xiaorouji main
+		AddPackage git lean openwrt-passwall xiaorouji luci
 		case "${TARGET_BOARD}" in
 		ramips)
 			sed -i "/DEVICE_COMPAT_VERSION := 1.1/d" target/linux/ramips/image/mt7621.mk
