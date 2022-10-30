@@ -93,7 +93,7 @@ EOF
 			rm -rf packages/lean/autocore
 			AddPackage git lean autocore-modify Hyy2001X master
 			sed -i -- 's:/bin/ash:'/bin/bash':g' ${BASE_FILES}/etc/passwd
-			sed -i "s?6.0?5.19?g" ${WORK}/target/linux/x86/Makefile
+			# sed -i "s?6.0?5.19?g" ${WORK}/target/linux/x86/Makefile
 		;;
 		esac
 	;;
