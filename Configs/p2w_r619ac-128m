@@ -168,7 +168,7 @@ CONFIG_PACKAGE_xray-plugin=y
 # CONFIG_PACKAGE_shadowsocks-rust-ssservice is not set
 # CONFIG_PACKAGE_shadowsocks-rust-ssurl is not set
 
-# Hello World
+# Pass Wall
 
 # CONFIG_PACKAGE_luci-app-passwall is not set
 
